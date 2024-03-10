@@ -1,0 +1,30 @@
+/**********************************************************************************************
+PURPOSE
+This CSS file provide a clever way to add browser and OS specific css styles.
+http://rafael.adm.br/css_browser_selector
+***********************************************************************************************/
+
+/*------------------------------------------
+// IE - All Versions - Windows
+//------------------------------------------*/
+
+/* Clearfix Method for containing floats in IE */
+.ie .clearfix { display: inline-block; }  /* ... especialy for IE7 */
+.ie .clearfix { display: block; }          /* ... for IE5,IE6,IE7 */
+* html.ie .clearfix { height: 1%; }       /* ... for IE5 + IE6/Win */
+
+/* Adjustment of .floatbox class for IE */
+.ie .floatbox { width:100%; }
+
+/*Use to make CSS 3 Rounded Corners , Text Shadows and Box Shadows for IE */
+.ie .css3 { behavior: url("javascript/responsive/PIE.html"); }
+
+/*------------------------------------------
+// IE - IE6.0 - Windows 
+//------------------------------------------*/
+
+/* Adds near-native PNG support with alpha opacity in IE6 */
+/* ie6 img { behavior: url("javascript/responsive/iepngfix.htc");  } */
+
+/* Adds ability to user :hover selector on any tag in IE6 */
+.ie6 body { behavior: url("javascript/responsive/csshover.html"); }
